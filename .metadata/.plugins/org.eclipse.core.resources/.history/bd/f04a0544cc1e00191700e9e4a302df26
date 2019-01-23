@@ -1,0 +1,26 @@
+package com.psl.util;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class BankAccount {
+	String accountNo;
+	float salary;
+	
+
+	public BankAccount(String accountNo, String amount) {
+		super();
+		this.accountNo = accountNo;
+		this.amount = amount;
+	}
+
+
+
+	public static void main(String[] args) {
+		Set<BankAccount> acs;
+		
+		acs=new HashSet<BankAccount>();
+		acs.add(new BankAccount("231",55.22));
+	}
+	
+}

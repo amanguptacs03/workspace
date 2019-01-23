@@ -1,0 +1,35 @@
+package com.psl.main;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Main {
+// exception and all its sub class exception come under checked exception expect RUNTIME eXception
+	//RUNTIME exception and all it subclass come in "unchecked exception"
+	public static void main(String[] args) throws FileNotFoundException, IOException {
+	try {
+		searchProduct("Code--001");
+		FileReader fr=new FileReader("some file");
+	} catch (ProductNotFoundException|FileNotFoundException ex) {
+		// TODO: handle exception
+	}
+	/* try with resources
+	 * in this we need not to call the close method,it will call bydefault at the end try block ,no matter how try is end
+	 * */
+	try(FileReader fr=new FileReader("any file")){
+		
+	}catch(IOException ex){
+		
+	}
+	
+	finally{
+		
+	}
+	}
+
+public static void searchProduct(String productCode) throws ProductNotFoundException{
+	throw new ProductNotFoundException("not found!!");
+}
+
+}

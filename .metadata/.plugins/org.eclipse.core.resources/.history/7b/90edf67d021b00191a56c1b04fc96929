@@ -1,0 +1,24 @@
+package com.psl.main;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class Main {
+// exception and all its sub class exception come under checked exception expect RUNTIME eXception
+	//RUNTIME exception and all it subclass come in "unchecked exception"
+	public static void main(String[] args) {
+	try {
+		searchProduct("Code--001");
+		FileReader fr=new FileReader("some file");
+	} catch (ProductNotFoundException|FileNotFoundException ex) {
+		// TODO: handle exception
+	}finally{
+		
+	}
+	}
+
+public static void searchProduct(String productCode) throws ProductNotFoundException{
+	throw new ProductNotFoundException("not found!!");
+}
+
+}

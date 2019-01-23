@@ -1,0 +1,7 @@
+package com.psl.client;
+
+public interface Drivable {
+	public void accelerate();
+
+	public void steer();
+}

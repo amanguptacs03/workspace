@@ -1,0 +1,5 @@
+package com.psl.model;
+
+public class Rectangle extends shape {
+
+}

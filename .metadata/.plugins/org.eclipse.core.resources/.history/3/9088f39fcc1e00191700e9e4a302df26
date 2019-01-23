@@ -1,0 +1,37 @@
+package com.psl.util;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class BankAccount {
+	String accountNo;
+	double amount;
+	
+
+	public BankAccount(String accountNo, double amount) {
+		super();
+		this.accountNo = accountNo;
+		this.amount = amount;
+	}
+
+
+
+	public static void main(String[] args) {
+		Set<BankAccount> acs;
+		
+		acs=new HashSet<BankAccount>();
+		acs.add(new BankAccount("231",55.22));
+		acs.add(new BankAccount("123",2355.22));
+		acs.add(new BankAccount("123",45545.22));
+		acs.add(new BankAccount("2545",6755.22));
+		
+		System.out.println(acs.size());
+		
+		
+		for(BankAccount ac:acs){
+			System.out.println(ac);
+		}
+	}
+	
+	
+}

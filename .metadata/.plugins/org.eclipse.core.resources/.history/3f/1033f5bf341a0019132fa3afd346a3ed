@@ -1,0 +1,16 @@
+package com.assign.three;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class HangMan {
+
+	public static void main(String[] args) {
+		
+
+	}
+public static String getRandomWord() throws Exception{
+	BufferedReader br= new BufferedReader(new FileReader("H:/Users/aman_gupta1/words.txt"));
+}
+}

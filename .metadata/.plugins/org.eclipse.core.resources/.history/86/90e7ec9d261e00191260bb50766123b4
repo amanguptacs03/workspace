@@ -1,0 +1,15 @@
+package com.assign.five;
+
+import java.sql.Timestamp;
+import java.util.Date;
+
+public class Dateops {
+public static void main(String[] args) {
+	
+	Date d=new Date();
+	Date d1= new Timestamp(1000);
+	System.out.println(d.toString()+"aman"+d1.toString());
+	
+	
+}
+}

@@ -1,0 +1,26 @@
+package com.assign.nugget_10;
+
+import java.sql.Date;
+
+public class Movie {
+
+	private String name;
+
+	public Movie(String name) {
+		super();
+		this.name = name;
+	}
+
+	public void newShow(Date date) {
+
+	}
+
+	public void update(Date date) {
+
+	}
+
+	public void delete(Date date) {
+
+	}
+
+}

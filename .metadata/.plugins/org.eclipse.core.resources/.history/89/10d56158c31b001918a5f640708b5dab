@@ -1,0 +1,12 @@
+package com.assign.nugget_7;
+
+import java.io.IOException;
+
+public class Main {
+
+	
+	public static void main(String[] args) throws IOException {
+		
+		System.out.println(WordOccurence.Check("i am i ama the i", "i"));
+	}
+}

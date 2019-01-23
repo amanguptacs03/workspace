@@ -1,0 +1,7 @@
+package com.assign.nugget_4;
+
+public class Ointment extends Medicine {
+	public  void displayLabel(){
+		
+	}
+}

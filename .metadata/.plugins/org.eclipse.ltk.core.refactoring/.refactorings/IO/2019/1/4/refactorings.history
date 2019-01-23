@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;NUGGET/src&apos;&#x0D;&#x0A;- Original project: &apos;IO&apos;&#x0D;&#x0A;- Destination element: &apos;NUGGET/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     mangesh.txt&#x0D;&#x0A;     aman.txt" description="Copy files" destination="=NUGGET/src" element1="src/mangesh.txt" element2="src/aman.txt" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1548065594752" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,5 @@
+package com.assign.four;
+
+public enum Dictionary {
+
+}

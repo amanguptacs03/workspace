@@ -1,0 +1,21 @@
+package com.assign.four;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class Temp {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br=new BufferedReader(new FileReader("H:/Users/aman_gupta1/Downloads/words.txt"));
+		ArrayList<String> al=new ArrayList<String>();
+		String s;
+		while((s=br.readLine())!=null){
+			al.add(s.toUpperCase()+",");
+			
+		}
+		System.out.println(al);
+	}
+}

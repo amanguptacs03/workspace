@@ -1,0 +1,9 @@
+package com.assign.second;
+
+public abstract class twoDimensionalShape {
+	String name;
+ abstract double area();
+  
+ abstract double perimeter();
+  
+}

@@ -1,0 +1,24 @@
+package com.assign.nugget_7;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class WordOccurence {
+
+	
+	private static File f=new File("mangesh.txt");
+			
+			
+	public static int Check(String s,String word) throws IOException{
+		FileWriter fw=new FileWriter(f);
+		fw.append(s);
+		FileReader fr=new FileReader(f);
+		while(fr.ready()){
+			
+		}
+		return 0;
+	}
+}

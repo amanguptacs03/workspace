@@ -1,0 +1,9 @@
+import com.persistent.app.Greeter;
+
+
+public class GreeterTest {
+public static void main(String[] args) {
+	Greeter n1=new Greeter(args[0]);
+	Greeter n2=new Greeter(args[1]);
+}
+}

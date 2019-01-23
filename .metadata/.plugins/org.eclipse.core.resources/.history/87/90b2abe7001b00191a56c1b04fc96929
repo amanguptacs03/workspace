@@ -1,0 +1,20 @@
+package com.psl.main;
+
+public class Main {
+// exception and all its sub class exception come under checked exception expect RUNTIME eXception
+	//RUNTIME exception and all it subclass come in "unchecked exception"
+	public static void main(String[] args) {
+	try {
+		
+	} catch (Exception e) {
+		// TODO: handle exception
+	}finally{
+		
+	}
+	}
+
+public static void searchProduct(String productCode) throws ProductNotFoundException{
+	throw new ProductNotFoundException("not found!!");
+}
+
+}

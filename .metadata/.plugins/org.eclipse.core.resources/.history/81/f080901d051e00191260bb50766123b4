@@ -1,0 +1,27 @@
+package com.psl.main;
+
+import java.sql.Date;
+
+import com.psl.util.Stack;
+
+public class Client {
+
+	public static void main(String[] args) {
+		Stack s=new Stack(10);
+		
+		
+		s.push("today");
+		s.push("is");
+		s.push("tuesday");
+		s.push(new Date());
+		
+		
+		System.out.println(s.peek());
+		System.out.println(s.pop());
+		
+		String v=(String)s.pop();   //ClassCastException----->solution is to used "GENERIC" (type safety)
+		
+		System.out.println(s.pop());
+
+	}
+}

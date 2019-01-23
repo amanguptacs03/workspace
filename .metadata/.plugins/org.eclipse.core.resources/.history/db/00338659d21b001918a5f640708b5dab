@@ -1,0 +1,16 @@
+package com.assign.nugget_9;
+
+import java.util.HashMap;
+
+
+public class Product {
+
+	private static String productID,productName;
+	public static void main(String[] args) {
+		
+		HashMap< String,String> hs =new HashMap<String,String>();
+		
+	
+	}
+	
+}

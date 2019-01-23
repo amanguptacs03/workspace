@@ -1,0 +1,31 @@
+package com.assign.second;
+
+public class Sphere extends ThreeDimensional{
+	private double radius;
+	
+	public Sphere(double radius) {
+		super();
+		this.radius = radius;
+	}
+
+	public double getRadius() {
+		return radius;
+	}
+
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
+
+	@Override
+	public void calculateVolume() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void calculateSurfaceArea() {
+		setsArea(4*Math.PI*radius*radius);
+		
+	}
+	
+}

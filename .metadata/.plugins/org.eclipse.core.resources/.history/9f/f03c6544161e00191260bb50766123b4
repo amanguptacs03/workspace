@@ -1,0 +1,6 @@
+package com.assign.four;
+
+public enum Dictionary {
+
+ test, play, game, run ,fast ,slow 
+}

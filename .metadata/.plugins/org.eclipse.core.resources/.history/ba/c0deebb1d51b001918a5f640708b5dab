@@ -1,0 +1,9 @@
+package com.assign.nugget_9;
+
+import java.util.Vector;
+
+public class Main {
+
+	
+	private static Vector<String> v =new Vector<String>();
+}

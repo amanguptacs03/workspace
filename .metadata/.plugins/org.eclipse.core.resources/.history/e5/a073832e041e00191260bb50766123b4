@@ -1,0 +1,34 @@
+package com.psl.util;
+
+public class Stack {
+
+	private int top, size;
+	private String data[];
+
+	public Stack(int size) {
+		super();
+		this.size = size;
+		data = new String[size];
+	}
+
+	public int getSize() {
+		return size;
+	}
+
+	public void setSize(int size) {
+		this.size = size;
+	}
+
+	public void push(String s) {
+
+	}
+
+	public String pop() {
+		return null;
+	}
+
+	public String peek() {
+		return null;
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.assign.four;
+
+public class Word extends Thread {
+	
+
+public static void main(String[] args) {
+	
+	
+	 Word WordDropper =new Word();
+		 WordDropper.start();
+		
+	
+
+	
+	
+	
+	Word WordInput =new Word();
+	WordInput.start();
+	
+}
+
+
+	
+}

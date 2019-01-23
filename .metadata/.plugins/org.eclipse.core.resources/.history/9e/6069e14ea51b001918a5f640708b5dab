@@ -1,0 +1,13 @@
+package com.persistent.app;
+
+public class Advisor {
+		
+	public Advisor(){
+	String[] message= new String[5];
+	}
+	
+	public static String getAdvice(){
+		return null;
+	}
+	
+}

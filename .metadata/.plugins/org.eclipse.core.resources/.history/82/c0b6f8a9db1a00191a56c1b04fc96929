@@ -1,0 +1,29 @@
+package com.assign.three;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Random;
+
+public class HangMan {
+
+	public static void main(String[] args) {
+		
+
+	}
+public static String getRandomWord() throws Exception{
+	BufferedReader br= new BufferedReader(new FileReader("H:/Users/aman_gupta1/words.txt"));
+	String s;
+	ArrayList<String> al=new ArrayList<String>();
+	while((s=br.readLine())!=null){
+		
+	
+		al.add(s);}
+	
+	Random r=new Random();
+
+	return al.get(r.nextInt(al.size()));
+}
+
+}

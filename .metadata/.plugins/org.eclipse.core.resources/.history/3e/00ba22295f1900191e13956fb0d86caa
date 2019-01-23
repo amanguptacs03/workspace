@@ -1,0 +1,9 @@
+package com.learntodrive.model;
+
+public class Engine {
+
+	private double horsePower;
+	private int cubicCapacity;
+	private FuelType=fuelType;
+	
+}

@@ -1,0 +1,14 @@
+package com.assign.nugget_2;
+
+public class NumSearch {
+	public static int found(int[] arr, int n){
+		int pos=0	;	
+		for(int i:arr){
+
+pos++;
+			if(i==n)
+				return pos;
+		}
+		return -1;
+	}
+}

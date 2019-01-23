@@ -1,0 +1,10 @@
+package com.assign.nugget_2;
+
+public class PrimeInRange {
+public static int[] findPrime(int s,int e){
+
+	for(int i=s;i<=e;s++){
+		
+	}
+}
+}

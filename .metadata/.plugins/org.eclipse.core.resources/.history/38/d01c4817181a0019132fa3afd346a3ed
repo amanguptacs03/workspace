@@ -1,0 +1,39 @@
+package com.assign.nugget_2;
+
+public class ProductSearch {
+      public static String[] initProductNames(){
+    	  
+    	  String[] str={"black cloth","mi redmi mobile black blue","induction usable utensil cooker","HP dell lenevo laptop","chair table black wooden furniture"};
+    	  
+    	  return str;
+      }
+      
+      public static boolean isPresent(String[] productNames, String keyword)
+      {
+    	  
+    	  for(String i:productNames){
+    		//  String[] j=i.contains(keyword);
+    		  if(i.contains(keyword))
+    		  return true;
+//    		  String[] j=i.split(" ");
+//    		  for(String k:j){
+//    			  if(k.equalsIgnoreCase(keyword))
+    				
+    		  }
+    		 
+    			 
+  //  	  }
+    	return false;  
+      }
+      
+      public static void main(String[] args) {
+		
+    	  ProductSearch ps=new ProductSearch();
+   String[] s= 	  ps.initProductNames();
+	boolean flag =ps.isPresent(s, "Hp"");
+	
+	System.out.println(flag);
+      }
+      
+      
+}

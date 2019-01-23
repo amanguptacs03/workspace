@@ -1,0 +1,11 @@
+package com.psl.main;
+
+public class Assign2_1 {
+public static boolean found(int[] arr, int n){
+	for(int i:arr){
+		if(i==n)
+			return true;
+	}
+	return false;
+}
+}

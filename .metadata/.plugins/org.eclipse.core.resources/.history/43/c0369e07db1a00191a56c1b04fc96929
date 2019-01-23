@@ -1,0 +1,21 @@
+package com.assign.three;
+
+import java.util.Stack;
+
+import com.assign.second.Contact;
+
+public class ContactStack  {
+
+	Stack<Contact> s= new Stack<Contact>();
+
+	private void push() {
+	// TODO Auto-generated method stub
+
+}
+
+	private void pop() {
+	// TODO Auto-generated method stub
+
+}
+
+}

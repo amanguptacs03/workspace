@@ -1,0 +1,24 @@
+package com.assign.nugget_7;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.util.Scanner;
+
+public class InputRead {
+	File f=new File("aman.txt");
+	public static void main(String[] args) {
+
+		String str;
+		Scanner obj=new Scanner(System.in);
+		System.out.println("enter a sting in file");
+	
+		str =obj.next();
+		input(str);
+		
+	}
+	
+	public static void input(String str){
+		FileWriter fw=new FileWriter(f);
+		
+	}
+}

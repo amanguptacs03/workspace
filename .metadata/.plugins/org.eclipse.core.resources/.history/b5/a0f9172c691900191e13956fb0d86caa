@@ -1,0 +1,8 @@
+package com.assign.second;
+
+public abstract class threeDimensionalSpace {
+	String name;
+	 abstract double sArea();
+	  
+	 abstract double volume();
+}

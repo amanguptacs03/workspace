@@ -1,0 +1,43 @@
+package com.assign.nugget_9;
+
+import java.util.Scanner;
+import java.util.Vector;
+
+public class Main {
+
+	
+	private static Vector<String> v =new Vector<String>();
+
+	
+	public static void main(String[] args) {
+		
+		Scanner obj= new Scanner(System.in);
+		showUI();
+		int i=obj.nextInt();
+		
+		switch (i) {
+		case 1:
+		{
+			
+			break;
+		}
+		
+		default:
+			System.out.println("please enter a valid option");
+			break;
+		}
+		
+	}
+	
+	public static void showUI(){
+		System.out.println("=======================================================");
+		System.out.println("OPTIONS \n");
+		System.out.println(String.format("%25s", "1. Accept FirstName and Surname"));
+		System.out.println(String.format("%25s", "2. Display Complete Name"));
+		System.out.println(String.format("%25s", "3. Exit"));
+		System.out.println("\n\n\n Enter Your Choice");
+		
+		
+		
+	}
+}

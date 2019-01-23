@@ -1,0 +1,18 @@
+package com.learn2drive.util;
+
+public enum FuelType {
+	PETROL,DIESEL,NATURAL_GAS;
+//object can't be created of enum
+	
+	private FuelType(int combustionTemperature)
+	public int CombustionTemperature;
+
+	public int getGetCombustionTemperature() {
+		return getCombustionTemperature;
+	}
+
+	public void setGetCombustionTemperature(int getCombustionTemperature) {
+		this.getCombustionTemperature = getCombustionTemperature;
+	}
+	
+}

@@ -1,0 +1,103 @@
+package com.assign.first;
+
+public class ControlFlow {
+
+	public static boolean isLeap(int y)
+
+	{
+		if (y % 4 == 0) {
+			if (y % 100 == 0) {
+				if (y % 400 == 0) {
+					return true;
+				}
+
+				return false;
+			}
+			return true;
+		}
+		return false;
+	}
+
+	public static String isEvenOdd(int n) {
+		if (n % 2 == 0)
+			return "even";
+		else
+			return "odd";
+	}
+	public static String isValid(String date)
+	{
+		int[] leap= {31,29,31,30,31,30,31,31,30,31,30,31};
+		int[] nLeap= {31,28,31,30,31,30,31,31,30,31,30,31};
+		String[] d=date.split("-");
+		int dd =Integer.parseInt(d[0]);
+		int mm =Integer.parseInt(d[1]);
+		int yy =Integer.parseInt(d[2]);
+		if(mm<1||mm>12)
+			return "invalid";
+		if(d[2].length()!=4)
+			return "invalid";
+		
+		if(isLeap(yy))
+		{
+		
+			if(dd<= leap[mm-1]&& dd>0)
+				return "valid";
+			else
+				return "invalid";
+		}
+		else
+		{
+			if(dd<= nLeap[mm-1]&& dd>0)
+				return "valid";
+			else
+				return "invalid";
+		}
+		
+		
+	
+		
+	}
+	public static int power(int n,int p)
+	
+	{
+		if(p==0)
+			return 1;
+		int x=1;
+		for(int i=1;i<=Math.abs(p);i++)
+			if(p>0)
+			x*=n;
+			else
+				x/=n;
+		return x;
+		
+	}
+	public static int factorial(int n)
+	{
+		int fact=1;
+		for(int i=1;i<=n;i++) {
+			fact*=i;
+			
+		}
+		return fact;
+	}
+	public static boolean isPrime(int n) {
+		for(int i=2;i<=Math.sqrt(n);i++)
+		{
+			if(n%i==0)
+				return false;
+		}
+		if(n==1)
+			return false;
+		
+		return true;
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(isLeap(1996));
+		System.out.println(isEvenOdd(10));
+		System.out.println(isValid("29-11-202"));
+		System.out.println(power(3, 3));
+		System.out.println(factorial(5));
+		System.out.println(isPrime(3));
+	}
+}

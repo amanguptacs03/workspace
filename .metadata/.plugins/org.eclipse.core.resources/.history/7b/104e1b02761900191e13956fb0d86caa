@@ -1,0 +1,8 @@
+package com.assign.second;
+
+public class ShapeDemo {
+	private String name;
+private double area,perimeter,volume,radius,side,sArea;
+
+
+}

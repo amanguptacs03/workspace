@@ -1,0 +1,22 @@
+package com.psl.main;
+
+public class Salary {
+
+	public static void main(String[] args) {
+
+		float bSalary = 30000f;
+		System.out.println("Dearness Allowance :" + bSalary * 10 / 100f);
+		System.out.println("Rent Allowance :" + bSalary * 7 / 100f);
+		System.out.println("Gross Salary :"
+				+ ((bSalary) + (bSalary * 10 / 100f) + (bSalary * 7 / 100f)));
+		System.out
+				.println("Income TAx:"
+						+ (((bSalary) + (bSalary * 10 / 100f) + (bSalary * 7 / 100f)) * 8 / 100f));
+		System.out
+				.println("Net Salary:"
+						+ (((bSalary) + (bSalary * 10 / 100f) + (bSalary * 7 / 100f)) - (((bSalary)
+								+ (bSalary * 10 / 100f) + (bSalary * 7 / 100f)) * 8 / 100f)));
+
+	}
+
+}

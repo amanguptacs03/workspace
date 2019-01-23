@@ -1,0 +1,17 @@
+package com.assign.second;
+
+public class Pyramid extends ThreeDimensional {
+
+	@Override
+	public void calculateVolume() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void calculateSurfaceArea() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

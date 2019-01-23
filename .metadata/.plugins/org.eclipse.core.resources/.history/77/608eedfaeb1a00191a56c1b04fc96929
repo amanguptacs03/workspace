@@ -1,0 +1,30 @@
+package com.assign.three;
+
+import java.util.Calendar;
+import static com.assign.one.ControlFlow.isLeap;
+
+import static com.assign.one.ControlFlow.isLeap;
+class CalendarRepeat{
+public static void main(String[] args) {
+	int curYear=2000;
+	Calendar c=new Calendar.Builder().setDate(curYear, 1, 1).build();
+	Calendar temp;
+	boolean c_leap=isLeap(curYear);
+	
+	System.out.println(curYear+" leap:"+c_leap);
+	for(int i=curYear+1;i<=curYear+100;i++){
+		if(isLeap(i)==c_leap){
+			System.out.println(i+" leap:"+isLeap(i));
+			temp=new Calendar.Builder().setDate(i, 1, 1).build();
+			
+			System.out.println(temp.DAY_OF_WEEK);
+			
+			if(c.DAY_OF_MONTH==temp.DAY_OF_MONTH){
+				System.out.println("SPAN :"+(i-curYear));
+				break;
+			}
+			
+		}
+	}
+}
+}

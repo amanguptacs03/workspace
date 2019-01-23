@@ -1,0 +1,96 @@
+package com.psl.main;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+import com.psl.util.BankAccount;
+import com.psl.util.BankAccountFullNameComparator;
+
+
+
+public class UserInterface {
+public static void main(String[] args) {
+	
+	List<String> str;
+	
+	str =new ArrayList<String>();
+	str.add("New");
+	str.add("Day");
+	str.add("Everyday");
+
+	System.out.println(str.get(2));
+	System.out.println(str.size());
+	System.out.println(str.remove(0));
+	
+	
+	for(String s:str){
+		System.out.println(s);
+	}
+	
+	if(str.contains("Everyday")){    //internally call equals method
+		
+	}
+	if(str.indexOf("Everyday")!=-1){
+		
+	}
+	
+	Set<BankAccount> acs;
+	
+	acs=new HashSet<BankAccount>();
+	acs.add(new BankAccount("231",55.22));
+	acs.add(new BankAccount("123",2355.22));
+	acs.add(new BankAccount("123",45545.22));
+	acs.add(new BankAccount("2545",6755.22));
+	
+	System.out.println(acs.size());
+	
+	
+	for(BankAccount ac:acs){
+		System.out.println(ac);
+	}
+	
+//	System.out.println("==========+==========+===========+===================");
+	SortedSet<BankAccount> sortedBankAccounts;
+//	sortedBankAccounts =new TreeSet<BankAccount>();
+//	sortedBankAccounts.add(new BankAccount("768", 6436));
+//	sortedBankAccounts.add(new BankAccount("12768", 7636));
+//	sortedBankAccounts.add(new BankAccount("34768", 7636));
+//	sortedBankAccounts.add(new BankAccount("56768", 436436));
+	
+	
+//	for(BankAccount ac :sortedBankAccounts)
+//	{
+//		System.out.println(ac);
+//	}
+	System.out.println("==========+==========+===========+===================");
+	//sortedBankAccounts=new TreeSet<BankAccount>(new BankAccountFullNameComparator());
+	sortedBankAccounts =new TreeSet<BankAccount>();
+	sortedBankAccounts.add(new BankAccount("aman gupta","768", 6436));
+	sortedBankAccounts.add(new BankAccount("mangesh","12768", 7636));
+	sortedBankAccounts.add(new BankAccount("akshansh","34768", 7636));
+	sortedBankAccounts.add(new BankAccount("aditya","56768", 436436));
+	
+	for(BankAccount ac :sortedBankAccounts)
+	{
+		System.out.println(ac.getFullName()+","+ac);
+	}
+	
+	
+	Set<BankAccount> accountobjects=new LinkedHashSet<BankAccount>();
+	accountobjects.add(new BankAccount("qqq","2358",34346));
+	accountobjects.add(new BankAccount("WWW","342358",341346));
+	accountobjects.add(new BankAccount("ABC","235438",89346));
+	accountobjects.add(new BankAccount("PQR","1358",3746));
+	
+	for(BankAccount ac :accountobjects)
+	{
+		System.out.println(ac.getFullName()+","+ac);
+	}
+	
+}
+}

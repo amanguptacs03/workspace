@@ -1,0 +1,10 @@
+package com.psl.client;
+
+public class MyDummyClass {
+	public static int variable=100;
+	//can be access by the class name
+	
+	public static int getVariable(){
+		return variable;
+	}
+}

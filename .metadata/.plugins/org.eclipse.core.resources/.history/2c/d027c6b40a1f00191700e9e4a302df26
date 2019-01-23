@@ -1,0 +1,19 @@
+package com.assign.collection;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+	private static String name, language,  director, producer, duration,releaseDate;
+	
+	
+	public static void main(String[] args) {
+		Movie mi=new Movie(name, language, director, producer, duration, releaseDate)
+		List<Movie> ll=Movie.createMovieList();
+		System.out.println(ll);
+		
+		Movie.sortByLanguage(ll);
+}}

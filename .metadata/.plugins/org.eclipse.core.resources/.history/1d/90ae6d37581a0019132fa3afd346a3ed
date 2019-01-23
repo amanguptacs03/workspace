@@ -1,0 +1,17 @@
+package com.assign.second;
+
+public class Circle extends TwoDimensional {
+
+	@Override
+	public void calculatePeimeter() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void calculateArea() {
+		// TODO Auto-generated method stub
+
+	}
+
+}
