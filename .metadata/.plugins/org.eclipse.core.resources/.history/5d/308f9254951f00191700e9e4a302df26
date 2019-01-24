@@ -1,0 +1,69 @@
+package com.assign.collection.three;
+
+import java.util.Map;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		CityStateMap csm=new CityStateMap();
+		Scanner obj=new Scanner(System.in);
+//	for(Map.Entry<String,String > m :csm.readFromFile("cityState.txt").entrySet()) {
+//		System.out.println(m.getKey()+"===================="+m.getValue());
+
+//	}
+
+	
+
+		CityStateMap.showUI();
+		loop : while(true)
+		{
+			switch (obj.nextInt()) {
+			case 1:
+			{
+				csm.readFromFile("cityState.txt");
+				csm.addCityStatePair();
+				
+				break;
+			}
+		case 2:
+	{
+			csm.readFromFile("cityState.txt");
+				System.out.println(csm.getState());
+			break;
+			}
+			case 3:
+			{
+				csm.readFromFile("cityState.txt");
+				csm.getAllCity();
+				break;
+			}
+			case 4:
+			{
+				csm.readFromFile("cityState.txt");
+				System.out.println(csm.getAllState());
+				break;
+			}
+			case 5:
+			{
+				System.out.println(csm.getStateCities());
+				break;
+			}
+			case 6:
+			{
+				csm.deleteAllCities();
+				break;
+			}
+			case 7:
+			{
+				
+				break loop;
+			}
+
+			default:
+				break;
+			}
+		}
+	}
+	}
+

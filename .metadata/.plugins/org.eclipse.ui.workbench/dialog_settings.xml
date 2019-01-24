@@ -38,6 +38,7 @@
 	<section name="ZipFileImportWizard">
 		<item value="false" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\JAVA Soft\Jar\mysql-connector-java-5.1.18-bin.jar"/>
 			<item value="H:\Users\aman_gupta1\Downloads\BasicJavaSampleCodesModule2.zip"/>
 		</list>
 	</section>

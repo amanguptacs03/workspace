@@ -1,0 +1,6 @@
+bhopal,mp
+indore,mp
+jhansi,up
+gwalior,mp
+noida,delhi
+gurgaon,delhi

@@ -1,9 +1,0 @@
-package com.assign.second;
-
-public interface Shape {
-  double area();
-  double volume();
-  double perimeter();
-  double sArea();
-
-}

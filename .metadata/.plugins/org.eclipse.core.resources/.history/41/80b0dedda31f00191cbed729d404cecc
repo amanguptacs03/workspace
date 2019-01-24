@@ -1,0 +1,38 @@
+package com.assign.jdbc;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import javax.net.ssl.ExtendedSSLSession;
+
+public class DbOperation {
+
+	static PreparedStatement ps;
+	static ResultSet rs;
+	static Connection conn;
+
+	public static void createTable() {
+		try {
+			if (conn == null)
+			conn=	DBConnection.getConnection();
+
+			ps = conn
+					.prepareStatement("create table emp( EMPNO     int(4)  NOT NULL,"
+							+ "ENAME     VARCHAR(10) ,"
+							+ "  JOB       VARCHAR(9),"
+							+ " MGR       int(4),"
+							+ "  HIREDATE  DATE,"
+							+ " SAL       double(7,2),"
+							+ "COMM      double(7,2)," + "DEPTNO    int(2))");
+			int i = ps.executeUpdate();
+			if (i > 0)
+				System.out.println("Successfully created");
+			else
+				System.out.println("creation failed");
+
+		} catch (Exception e) {
+			System.out.println("Creation FAiled " + e);
+		}
+	}
+}
