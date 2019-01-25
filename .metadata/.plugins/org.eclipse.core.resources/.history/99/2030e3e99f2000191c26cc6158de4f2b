@@ -1,0 +1,13 @@
+package com.assign.nugget_4;
+
+public class Executor {
+
+	public static void main(String[] args) {
+		
+		List<String >arr=new ArrayList<String>({"aman","is","excellent","coder"});
+		GenericMethod.print(arr);
+		
+
+	}
+
+}

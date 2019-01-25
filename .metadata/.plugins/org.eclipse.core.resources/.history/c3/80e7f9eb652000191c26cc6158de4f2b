@@ -1,0 +1,12 @@
+package com.assign.nugget_4;
+
+import java.util.Map;
+
+public class Caching {
+
+	
+	 Map<String, int> map=new Map<String, Integer>();
+	public static void main(String[] args) {
+		
+	}
+}

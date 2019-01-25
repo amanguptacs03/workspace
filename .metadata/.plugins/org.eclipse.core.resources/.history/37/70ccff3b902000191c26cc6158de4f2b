@@ -1,0 +1,16 @@
+package com.psl.util;
+
+public class UpdateCommonResource extends Thread{
+
+	private CommonResource commonResource;
+	
+	public UpdateCommonResource(CommonResource commonResource){
+		this.commonResource=commonResource;
+	}
+	
+	
+	@Override
+	public void run(){
+		
+	}
+}

@@ -1,0 +1,23 @@
+package com.assign.nugget_4;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+
+public class Caching {
+
+	
+	 Map<String, Integer> map=new HashMap<String, Integer>();
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		String s;
+		while((s=obj.next())!=null){
+			Set<Character> ch=new HashSet<Character>();
+			char arr[]=s.toCharArray();
+			ch.addAll(s);
+			
+		}
+	}
+}

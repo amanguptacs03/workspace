@@ -1,0 +1,16 @@
+package com.psl.util;
+
+public class AccessCommonResource extends Thread {
+
+private CommonResource commonResource;
+	
+	public AccessCommonResource(CommonResource commonResource){
+		this.commonResource=commonResource;
+	}
+	
+	
+	@Override
+	public void run(){
+		
+	}
+}

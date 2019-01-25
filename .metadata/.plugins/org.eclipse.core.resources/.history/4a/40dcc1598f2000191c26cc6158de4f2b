@@ -1,0 +1,17 @@
+package com.psl.util;
+
+import java.util.Random;
+
+public class CommonResource {
+
+	private int numbers[];
+	private boolean  available;
+	private Random random;
+	
+	public CommonResource(){
+		super();
+		numbers=new int[50];
+		available=true;
+		random=new Random();
+	}
+}
