@@ -23,7 +23,7 @@ public class Main {
 		csm.readFromFile("cityState.txt");
 		Scanner obj=new Scanner(System.in);
 
-int x=0;
+
 		
 		loop : while(true)
 		{	showUI();
