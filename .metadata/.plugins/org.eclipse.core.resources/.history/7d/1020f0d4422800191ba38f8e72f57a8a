@@ -1,0 +1,27 @@
+package com.assign.five;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
+
+public class Dateops {
+public static void main(String[] args) throws ParseException {
+	
+	
+	Date d1= new Date();
+	
+	Date d2= new Date(new SimpleDateFormat("dd/M/yyyy").parse("21/04/1965").getTime());
+	System.out.println(d1.toString()+" *************"+d2.toString());
+	boolean flag=afterOccur( d1, d2);
+	if(flag)
+		System.out.println("Date1 come after Date2");
+	
+}
+public static boolean afterOccur(Date d1,Date d2)
+{
+	if(d1.after(d2))
+		return true;
+	
+	return false;
+}
+}

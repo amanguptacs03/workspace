@@ -45,6 +45,7 @@ public class CityStateMap {
 	}
 	
 	
+	
 	public  void addCityStatePair() {
 		obj=new Scanner(System.in);
 		System.out.println("Enter the city you want to add");
@@ -59,6 +60,7 @@ public class CityStateMap {
 		m.put(state,hs);
 	
 		for(Map.Entry<String,HashSet<String>> mi:m.entrySet()) {
+		
 			System.out.println(mi.getKey()+"===================="+mi.getValue());}
 	
 			

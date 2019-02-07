@@ -40,7 +40,7 @@ public class GenericMethod {
 		queue.add(new Employee(2, 1, 99999.00, "Aman", Date.valueOf("2019-01-10")));
 		queue.add(new Employee(3, 1, 99999.00, "Roma", Date.valueOf("2019-01-10")));
 		
-		
+	
 		
 		print(arr);
 		System.out.println("--------------------------------------------------------------------");

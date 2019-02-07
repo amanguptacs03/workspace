@@ -1,0 +1,57 @@
+<%@page import="org.json.JSONObject"%>
+<%@page import="net.sf.json.util.JSONBuilder"%>
+<%@page import="jdk.nashorn.internal.parser.JSONParser"%>
+<%@page import="java.io.InputStreamReader"%>
+<%@page import="java.net.URL"%>
+<%@page import="java.net.HttpURLConnection"%>
+<%@page import="java.net.URLEncoder"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+String username=request.getParameter("username");
+
+URL url=new URL("http://localhost:8080/tienda/users/"+URLEncoder.encode(username,"utf-8"));
+HttpURLConnection con=(HttpURLConnection) url.openConnection();
+con.setRequestMethod("GET");
+if(con.getResponseCode()==200){
+	
+	InputStreamReader isr=new InputStreamReader(con.getInputStream());
+	String line="";
+	while(isr.ready())
+		line+=(char)isr.read();
+	
+	JSONObject jo=new JSONObject(line);
+
+	int id=jo.getInt("userID");
+	String name=jo.getString("username");
+	String email=jo.getString("email");
+
+	
+}%>
+
+	<table class="table" >
+	<thead>
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Email</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td><%=id%></td>
+	</tr>
+	</tbody>
+	
+	</table>
+
+
+</body>
+</html>

@@ -22,6 +22,7 @@ public class Main {
 		 *IN try with resource we can pass only those object that implement
 		 "auto closable interface"
 		 * */
+		
 		 try(FileReader fr=new FileReader("any file")){
 		
 		 }catch(IOException ex){
@@ -41,8 +42,10 @@ public class Main {
 		throw new ProductNotFoundException("not found!!");
 	}
 
+
 	private static double calculateSpeed(double distance, double time) {
 		assert distance > 0 : "distance should be greatre than zero";
+		
 	/*If assertion	 fail then it will give assertion error.At normal flow assertion is avoided we need to enable the assertion by command line	" -ea"*/
 		assert time > 0 : "timeshould be greatre than zero";// for disablingn write "-da"
 															

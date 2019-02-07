@@ -28,7 +28,8 @@ public static void main(String[] args) throws Exception {
 	
 	fos.write('\n');
 	
-	while(isr.ready())osw.write((ch=(char) isr.read())==' '?'\n':ch);
+	while(isr.ready())
+		osw.write((ch=(char) isr.read())==' '?'\n':ch);
 	
 	
 	isr.close();
@@ -39,16 +40,16 @@ public static void main(String[] args) throws Exception {
 	
 	
 	
-//	Properties p=new Properties();
-//	try {
-//		p.load(new FileReader("src/configuration.properties"));
-//		for(Object i:p.keySet()){
-//		
-//		System.out.println(i+" : "+p.getProperty((String) i));
-//		
-//	}
-//		
-//		//can use for CSV file (IMPORTANT)
+	Properties p=new Properties();
+	try {
+		p.load(new FileReader("src/configuration.properties"));
+		for(Object i:p.keySet()){
+		
+		System.out.println(i+" : "+p.getProperty((String) i));
+		
+	}
+		
+		//can use for CSV file (IMPORTANT)
 //		Scanner scanFile =new Scanner(new File("a.csv"));
 //	while(scanFile.hasNext()){
 //		String line=scanFile.next();
@@ -70,10 +71,10 @@ public static void main(String[] args) throws Exception {
 //	}
 //	
 //	
-//	} catch (IOException e) {
-//	e.printStackTrace();
-//	}
-//	
+	} catch (IOException e) {
+	e.printStackTrace();
+	}
+	
 	
 	
 	

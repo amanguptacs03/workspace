@@ -1,8 +1,0 @@
-package com.assign.jdbc;
-
-public class Employee {
-
-	private int emp_no,mgr,dept_no;
-	private double salary,comm;
-	private string emp_name,job;
-}
